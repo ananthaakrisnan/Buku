@@ -2,7 +2,7 @@
 session_start();
 include('config.php');
 
-// Semak login
+
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit;
@@ -15,7 +15,7 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <title>Senarai Buku Tambah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Bootstrap -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body, html {
@@ -70,7 +70,8 @@ if (!isset($_SESSION['username'])) {
         </thead>
         <tbody>
         <?php
-        // Guna ORDER BY id ASC untuk susunan menaik (1, 2, 3...)
+        
+        
         $sqlSelect = "SELECT * FROM rekod_buku ORDER BY id ASC";
         $result = mysqli_query($conn, $sqlSelect);
         $bil = 1;

@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['username'] = $username;
         header("Location: index.php");
     } else {
-        // Set error message if credentials are incorrect
+      
         $error = "Nama pengguna atau kata laluan tidak sah";
     }
 }
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <h2>Login to Your Account</h2>
 
-        <!-- Display the error message if there's any -->
+        
         <?php if (!empty($error)): ?>
             <div class="alert alert-danger text-center">
                 <?php echo $error; ?>
