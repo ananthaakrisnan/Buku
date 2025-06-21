@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="wave"></div>
         <div class="wave"></div>
 
-        <h2>Login to Your Account</h2>
+        
 
         
         <?php if (!empty($error)): ?>
